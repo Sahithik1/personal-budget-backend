@@ -26,7 +26,7 @@ app.use('/api',api)
 app.use('/', index)
 
 // hosting server
-let port = 5000
-app.listen(port, () => {
-    console.log('Server started and running on port:', port)
+//let port = 5000
+app.listen(process.env.PORT || 5000, () => {
+    console.log('Server started and running on port:')
 })
